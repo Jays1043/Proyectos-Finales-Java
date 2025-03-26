@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+</head>
+<style>
+    body{
+        background-color: lightblue;
+    }
+</style>
+<body>
+<div class="container mt-5">
+    <div class="row justify-content-center">
+        <div class="col-md-6">
+            <div class="card">
+                <div class="card-body">
+                    <h4 class="card-title">Editar Idioma</h4>
+                    <form th:action="@{/idiomas/Editar/{idIdioma}}" method="post" th:object="${idioma}">
+                        <input type="hidden" name="idIdioma" th:field="*{idIdioma}"  />
+
+                        <div class="form-group">
+                            <label >Idioma:</label>
+                            <input type="text" class="form-control" required name="idiomas" th:field="*{idiomas}" />
+                        </div>
+                        <button type="submit" class="btn btn-primary">Guardar</button>
+                        <a th:href="@{/idiomas}" class="btn btn-secondary">Cancelar</a>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
