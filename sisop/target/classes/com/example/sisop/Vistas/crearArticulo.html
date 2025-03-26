@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Crear/Editar Artículo</title>
+</head>
+<body>
+    <h1 th:text="${#strings.isEmpty(articulo.id) ? 'Crear Artículo' : 'Editar Artículo'}"></h1>
+    
+    <form th:action="@{/articulos}" method="post" th:object="${articulo}">
+        <label for="titulo">Título:</label>
+        <input type="text" id="titulo" th:field="*{titulo}" required/>
+
+        <label for="contenido">Contenido:</label>
+        <textarea id="contenido" th:field="*{contenido}" required></textarea>
+
+        <button type="submit" th:text="${#strings.isEmpty(articulo.id) ? 'Crear' : 'Guardar'}"></button>
+    </form>
+
+    <a href="/articulos">Volver a la lista de artículos</a>
+</body>
+</html>

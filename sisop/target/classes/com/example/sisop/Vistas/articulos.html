@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Artículos</title>
+</head>
+<body>
+    <h1>Lista de Artículos</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>Título</th>
+                <th>Contenido</th>
+                <th>Acciones</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr th:each="articulo : ${articulos}">
+                <td th:text="${articulo.titulo}"></td>
+                <td th:text="${articulo.contenido}"></td>
+                <td>
+                    <form th:action="@{/articulos/eliminar/{id}(id=${articulo.id})}" method="post">
+                        <button type="submit">Eliminar</button>
+                    </form>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+    <a href="/articulos/nuevo">Crear nuevo artículo</a>
+</body>
+</html>

@@ -1,0 +1,10 @@
+com/example/sisop/Service/UsuarioService.class
+com/example/sisop/Repository/UsuarioRepository.class
+com/example/sisop/SisopApplication.class
+com/example/sisop/Controller/ArticuloController.class
+com/example/sisop/Repository/ArticuloRepository.class
+com/example/sisop/Controller/UsuarioController.class
+com/example/sisop/Service/ArticuloService.class
+com/example/sisop/Entity/Usuario.class
+com/example/sisop/SecurityConfig.class
+com/example/sisop/Entity/Articulo.class

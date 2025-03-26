@@ -1,0 +1,10 @@
+/home/roxana/Descargas/sisop/src/main/java/com/example/sisop/Controller/ArticuloController.java
+/home/roxana/Descargas/sisop/src/main/java/com/example/sisop/Controller/UsuarioController.java
+/home/roxana/Descargas/sisop/src/main/java/com/example/sisop/Entity/Articulo.java
+/home/roxana/Descargas/sisop/src/main/java/com/example/sisop/Entity/Usuario.java
+/home/roxana/Descargas/sisop/src/main/java/com/example/sisop/Repository/ArticuloRepository.java
+/home/roxana/Descargas/sisop/src/main/java/com/example/sisop/Repository/UsuarioRepository.java
+/home/roxana/Descargas/sisop/src/main/java/com/example/sisop/SecurityConfig.java
+/home/roxana/Descargas/sisop/src/main/java/com/example/sisop/Service/ArticuloService.java
+/home/roxana/Descargas/sisop/src/main/java/com/example/sisop/Service/UsuarioService.java
+/home/roxana/Descargas/sisop/src/main/java/com/example/sisop/SisopApplication.java
